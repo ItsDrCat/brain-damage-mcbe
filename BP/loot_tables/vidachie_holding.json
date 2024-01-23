@@ -66,6 +66,11 @@
 					"type": "item",
 					"name": "redstone_torch",
 					"weight": 12
+				},
+				{
+					"type": "item",
+					"name": "gunpowder",
+					"weight": 12
 				}
 			]
 		}
