@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "brain_dmg:cheese"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "milk_bucket",
+				"count": 1
+			},
+			{
+				"item": "milk_bucket",
+				"count": 1
+			},
+			{
+				"item": "milk_bucket",
+				"count": 1
+			},
+			{
+				"item": "milk_bucket",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "brain_dmg:cheese",
+			"count": 8
+		}
+	}
+}

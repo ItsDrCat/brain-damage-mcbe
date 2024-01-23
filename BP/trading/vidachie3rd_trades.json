@@ -1,0 +1,112 @@
+{
+	"tiers": [
+		{
+			"trades": [
+				{
+					"wants": [
+						{
+							"item": "flint_and_steel",
+							"quantity": 1
+						}
+					],
+					"gives": [
+						{
+							"choice": [
+								{
+									"item": "tnt",
+									"quantity": 4
+								},
+								{
+									"item": "gunpowder",
+									"quantity": 10
+								}
+							]
+						}
+					],
+					"trader_exp": 10,
+					"reward_exp": true
+				},
+				{
+					"wants": [
+						{
+							"item": "feather",
+							"quantity": {
+								"min": 2,
+								"max": 8
+							}
+						}
+					],
+					"gives": [
+						{
+							"item": "cooked_chicken",
+							"quantity": {
+								"min": 3,
+								"max": 12
+							}
+						}
+					],
+					"reward_exp": true,
+					"trader_exp": 8
+				}
+			]
+		},
+		{
+			"trades": [
+				{
+					"wants": [
+						{
+							"item": "iron_ingot",
+							"quantity": {
+								"min": 3,
+								"max": 9
+							}
+						}
+					],
+					"gives": [
+						{
+							"item": "brain_dmg:ball",
+							"quantity": 2
+						}
+					],
+					"reward_exp": true,
+					"trader_exp": 12
+				},
+				{
+					"wants": [
+						{
+							"item": "diamond",
+							"quantity": 3
+						}
+					],
+					"gives": [
+						{
+							"item": "bow",
+							"quantity": 1,
+							"functions": [
+								{
+									"function": "enchant_with_levels",
+									"levels": {
+										"min": 7,
+										"max": 18
+									}
+								},
+								{
+									"function": "set_name",
+									"name": "§nLesser Bow"
+								},
+								{
+									"function": "set_lore",
+									"lore": [
+										"It's alright I guess."
+									]
+								}
+							]
+						}
+					],
+					"reward_exp": true,
+					"trader_exp": 32
+				}
+			]
+		}
+	]
+}

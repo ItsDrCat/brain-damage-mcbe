@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Brain Damage!!!",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"brain_dmg_cheese": {
+			"textures": "textures/items/cheese"
+		},
+		"brain_dmg_ball": {
+			"textures": "textures/items/ball"
+		}
+	}
+}

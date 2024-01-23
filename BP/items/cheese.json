@@ -1,0 +1,34 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "brain_dmg:cheese",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:use_duration": 2.2,
+			"minecraft:food": {
+				"nutrition": 7,
+				"saturation_modifier": "poor",
+				"on_consume": {
+					"event": "brain_dmg:zoomies"
+				}
+			},
+			"minecraft:icon": {
+				"texture": "brain_dmg_cheese"
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:render_offsets": "apple"
+		},
+		"events": {
+			"brain_dmg:zoomies": {
+				"add_mob_effect": {
+					"effect": "speed",
+					"amplifier": 5,
+					"duration": 6,
+					"target": "holder"
+				}
+			}
+		}
+	}
+}

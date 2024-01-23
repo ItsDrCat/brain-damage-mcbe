@@ -1,0 +1,337 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "brain_dmg:vidachie3rd",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"brain_dmg:vidachie3rd_baby": {
+				"minecraft:is_baby": {},
+				"minecraft:scale": {
+					"value": 0.5
+				},
+				"minecraft:movement": {
+					"value": 0.35
+				}
+			},
+			"brain_dmg:vidachie3rd_adult": {
+				"minecraft:movement": {
+					"value": 0.23
+				},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"family_types": [
+						"vidachie3rd"
+					],
+					"seats": {
+						"position": [
+							0,
+							1.1,
+							-0.35
+						],
+						"lock_rider_rotation": 0
+					}
+				},
+				"minecraft:behavior.mount_pathing": {
+					"priority": 2,
+					"speed_multiplier": 1.25,
+					"target_dist": 0,
+					"track_target": true
+				}
+			},
+			"brain_dmg:vidachie3rd_jockey": {
+				"minecraft:behavior.find_mount": {
+					"priority": 1,
+					"within_radius": 16
+				}
+			}
+		},
+		"components": {
+			"minecraft:movement.basic": {},
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"vidachie3rd",
+					"player"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"can_pass_doors": true,
+				"can_walk": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:health": {
+				"value": 20,
+				"max": 20
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:behavior.mingle": {},
+			"minecraft:behavior.look_at_entity": {
+				"filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "cat"
+						},
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "wolf"
+						},
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "bee"
+						},
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "warden"
+						}
+					]
+				},
+				"priority": 7,
+				"probability": 0.09,
+				"look_distance": 8,
+				"look_time": [
+					5,
+					10
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_air": true,
+				"breathes_water": true
+			},
+			"minecraft:attack": {
+				"damage": 4
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/vidachie3rd.json"
+			},
+			"minecraft:behavior.melee_attack": {
+				"speed_multiplier": 1,
+				"track_target": true,
+				"reach_multiplier": 5,
+				"melee_fov": 180
+			},
+			"minecraft:behavior.stomp_turtle_egg": {
+				"priority": 4,
+				"speed_multiplier": 1,
+				"search_range": 10,
+				"search_height": 3,
+				"goal_radius": 1.14,
+				"search_count": 4,
+				"interval": 20
+			},
+			"minecraft:behavior.follow_mob": {
+				"priority": 3,
+				"speed_multiplier": 1,
+				"search_range": 16,
+				"start_distance": 7,
+				"stop_distance": 2
+			},
+			"minecraft:behavior.move_towards_restriction": {
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.door_interact": {
+				"priority": 2
+			},
+			"minecraft:attack_cooldown": {
+				"attack_cooldown_complete_event": {},
+				"attack_cooldown_time": 0.08
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.tempt": {
+				"items": [
+					"gunpowder",
+					"tnt",
+					"diamond",
+					"spyglass"
+				],
+				"speed_multiplier": 1.2,
+				"within_radius": 16
+			},
+			"minecraft:trade_table": {
+				"display_name": "vidachie3rd",
+				"new_screen": true,
+				"convert_trades_economy": false,
+				"hero_demand_discount": 1,
+				"persist_trades": false,
+				"table": "trading/vidachie3rd_trades.json"
+			},
+			"minecraft:behavior.trade_interest": {},
+			"minecraft:trade_resupply": {},
+			"minecraft:equip_item": {},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"within_radius": 25,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "undead"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "chicken"
+								}
+							],
+							"none_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "vidachie3rd"
+								}
+							]
+						},
+						"max_dist": 35
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "wandering_trader"
+								}
+							]
+						},
+						"max_dist": 35,
+						"must_see": false
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "baby_turtle"
+								},
+								{
+									"test": "in_water",
+									"subject": "other",
+									"operator": "!=",
+									"value": true
+								}
+							]
+						},
+						"max_dist": 35
+					}
+				],
+				"must_see": true,
+				"must_see_forget_duration": 17
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/vidachie_holding.json"
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 380,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"brain_dmg:vidachie3rd_adult"
+							]
+						}
+					},
+					{
+						"weight": 17,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"brain_dmg:vidachie3rd_baby"
+							]
+						}
+					},
+					{
+						"weight": 3,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"brain_dmg:vidachie3rd_baby",
+								"brain_dmg:vidachie3rd_jockey"
+							]
+						}
+					}
+				]
+			},
+			"brain_dmg:as_adult": {
+				"add": {
+					"component_groups": [
+						"brain_dmg:vidachie3rd_adult"
+					]
+				}
+			},
+			"brain_dmg:as_baby": {
+				"add": {
+					"component_groups": [
+						"brain_dmg:vidachie3rd_baby"
+					]
+				}
+			}
+		}
+	}
+}

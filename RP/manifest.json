@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"ItsDrCat"
+		]
+	},
+	"header": {
+		"name": "Brain Damage!!! (RP)",
+		"description": "Minecraft, but I hit it in the forehead with a sledgehammer. (Cat RTX Reccomended for RTX)",
+		"min_engine_version": [
+			1,
+			20,
+			50
+		],
+		"uuid": "a6516d01-9d29-406e-8576-056d052a6c91",
+		"version": [
+			0,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "6072d816-045f-4c96-bdcd-3b55a8c0d298",
+			"version": [
+				0,
+				1,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "48d42d62-d66d-412c-aff2-22694925a44a",
+			"version": [
+				0,
+				1,
+				0
+			]
+		}
+	]
+}

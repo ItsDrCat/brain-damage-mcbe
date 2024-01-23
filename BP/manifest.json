@@ -1,0 +1,64 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"ItsDrCat"
+		]
+	},
+	"header": {
+		"name": "Brain Damage!!!",
+		"description": "Minecraft, but I hit it in the forehead with a sledgehammer.",
+		"min_engine_version": [
+			1,
+			20,
+			50
+		],
+		"uuid": "48d42d62-d66d-412c-aff2-22694925a44a",
+		"version": [
+			0,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "cb2dc4bd-a579-4718-b3d6-d7374df2f3a9",
+			"version": [
+				0,
+				1,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "a6516d01-9d29-406e-8576-056d052a6c91",
+			"version": [
+				0,
+				1,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-net",
+			"version": "1.0.0-beta"
+		}
+	]
+}

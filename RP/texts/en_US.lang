@@ -1,0 +1,7 @@
+item.brain_dmg:cheese=Cheese
+tile.brain_dmg:red_log.name="Red" Log
+item.brain_dmg:ball=ball.
+
+entity.brain_dmg:thrown_ball.name=ball.
+item.spawn_egg.entity.brain_dmg:vidachie3rd.name=Spawn vidachie3rd
+entity.brain_dmg:vidachie3rd.name=vidachie3rd

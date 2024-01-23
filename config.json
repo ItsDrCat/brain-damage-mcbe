@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Brain Damage!!!",
+	"namespace": "brain_dmg",
+	"authors": [
+		"ItsDrCat"
+	],
+	"targetVersion": "1.20.50",
+	"description": "Minecraft, but I hit it in the forehead with a sledgehammer.",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Brain Damage!!!"
+				}
+			]
+		]
+	}
+}

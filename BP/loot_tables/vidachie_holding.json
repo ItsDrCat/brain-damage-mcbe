@@ -1,0 +1,73 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "iron_sword",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "golden_sword",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "stone_sword",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "iron_axe",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "iron_hoe",
+					"weight": 7
+				},
+				{
+					"type": "item",
+					"name": "wooden_hoe",
+					"weight": 7
+				},
+				{
+					"type": "item",
+					"name": "wooden_sword",
+					"weight": 7
+				},
+				{
+					"type": "item",
+					"name": "tnt",
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "torch",
+					"weight": 12
+				},
+				{
+					"type": "item",
+					"name": "andesite",
+					"weight": 12
+				},
+				{
+					"type": "item",
+					"name": "iron_shovel",
+					"weight": 12
+				},
+				{
+					"type": "item",
+					"name": "redstone_torch",
+					"weight": 12
+				}
+			]
+		}
+	]
+}

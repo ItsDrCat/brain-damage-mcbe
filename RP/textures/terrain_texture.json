@@ -1,0 +1,14 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Brain Damage!!!",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"brain_dmg_red_log": {
+			"textures": "textures/blocks/log_red"
+		},
+		"brain_dmg_red_log_top": {
+			"textures": "textures/blocks/log_red_top"
+		}
+	}
+}
