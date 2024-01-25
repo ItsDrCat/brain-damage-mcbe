@@ -1,4 +1,4 @@
-	{
+{
 	"format_version": [
 		1,
 		1,
@@ -11,5 +11,9 @@
 			"up": "brain_dmg_red_log_top",
 			"down": "brain_dmg_red_log_top"
 		}
+	},
+	"brain_dmg:crate": {
+		"sound": "stone",
+		"textures": "brain_dmg_crate"
 	}
 }

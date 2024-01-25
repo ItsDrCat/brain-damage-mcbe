@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "brain_dmg:crate",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"tag:wood": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.3
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 5
+			},
+			"minecraft:flammable": true,
+			"minecraft:loot": "loot_tables/crate_loot.json"
+		}
+	}
+}

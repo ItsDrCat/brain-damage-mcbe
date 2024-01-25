@@ -48,7 +48,8 @@
 					"reward_exp": true,
 					"trader_exp": 8
 				}
-			]
+			],
+			"total_exp_required": 100
 		},
 		{
 			"trades": [
@@ -69,7 +70,7 @@
 						}
 					],
 					"reward_exp": true,
-					"trader_exp": 12
+					"trader_exp": 20
 				},
 				{
 					"wants": [
@@ -106,7 +107,36 @@
 					"reward_exp": true,
 					"trader_exp": 32
 				}
-			]
+			],
+			"total_exp_required": 300
+		},
+		{
+			"trades": [
+				{
+					"wants": [
+						{
+							"item": "diamond",
+							"quantity": {
+								"min": 5,
+								"max": 12
+							}
+						},
+						{
+							"item": "chest",
+							"quantity": 1
+						}
+					],
+					"gives": [
+						{
+							"item": "brain_dmg:crate",
+							"quantity": 1
+						}
+					],
+					"trader_exp": 75,
+					"reward_exp": true
+				}
+			],
+			"total_exp_required": 550
 		}
 	]
 }

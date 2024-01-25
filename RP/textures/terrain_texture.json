@@ -9,6 +9,9 @@
 		},
 		"brain_dmg_red_log_top": {
 			"textures": "textures/blocks/log_red_top"
+		},
+		"brain_dmg_crate": {
+			"textures": "textures/blocks/crate"
 		}
 	}
 }
