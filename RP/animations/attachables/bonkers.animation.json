@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bonkers.first_person_hold": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						52.81031,
+						62.85484,
+						-82.92604
+					],
+					"position": [
+						3,
+						23,
+						4
+					]
+				},
+				"gear1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							0,
+							-360
+						]
+					}
+				},
+				"gear2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							0,
+							360
+						]
+					}
+				}
+			}
+		},
+		"animation.bonkers.third_person_hold": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.5,
+						22.5,
+						-0.5
+					]
+				},
+				"gear1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							0,
+							-360
+						]
+					}
+				},
+				"gear2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							0,
+							360
+						]
+					}
+				}
+			}
+		}
+	}
+}
